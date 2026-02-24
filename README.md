@@ -28,15 +28,15 @@ Current YOPO entry points are in:
 
 | Model | Config | IoU50 | IoU75 | 10deg10cm | Checkpoint |
 |---|---|---:|---:|---:|---|
-| YOPO R50 | [file](configs/yopo/nocs_yopo_real_camera_r50.py) | 67.1 | 16.6 | 40.7 | [link]() |
-| YOPO Swin-L | [file](configs/yopo/nocs_yopo_real_camera_swinl.py) | 71.6 | 16.4 | 52.8 | [link]() |
-| YOPO Swin-L* | [file](configs/yopo/nocs_yopo_real_camera_swinl_finetune_real.py) | 79.6 | 19.6 | 54.1 | [link]() |
+| YOPO R50 | [file](configs/yopo/nocs_yopo_real_camera_r50.py) | 67.1 | 16.6 | 40.7 | [link](https://github.com/pitin-ev/YOPO/releases/download/v1.0.0/nocs_yopo_real_camera_r50.pth) |
+| YOPO Swin-L | [file](configs/yopo/nocs_yopo_real_camera_swinl.py) | 71.6 | 16.4 | 52.8 | [link](https://github.com/pitin-ev/YOPO/releases/download/v1.0.0/nocs_yopo_real_camera_swinl.pth) |
+| YOPO Swin-L* | [file](configs/yopo/nocs_yopo_real_camera_swinl_finetune_real.py) | 79.6 | 19.6 | 54.1 | [link](https://github.com/pitin-ev/YOPO/releases/download/v1.0.0/nocs_yopo_real_camera_swinl_finetune_real.pth) |
 
 ### HouseCat6D
 
 | Model | Config | IoU25 | IoU50 | 10deg10cm | Checkpoint |
 |---|---|---:|---:|---:|---|
-| YOPO Swin-L | [file](configs/yopo/housecat6d_yopo_swinl.py) | 71.3 | 34.8 | 33.3 | [link]() |
+| YOPO Swin-L | [file](configs/yopo/housecat6d_yopo_swinl.py) | 71.3 | 34.8 | 33.3 | [link](https://github.com/pitin-ev/YOPO/releases/download/v1.0.0/housecat6d_yopo_swinl.pth) |
 
 ## Environment
 
