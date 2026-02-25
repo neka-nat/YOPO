@@ -126,26 +126,26 @@ Each scene should include at least:
 
 ### NOCS (R50)
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 \
-bash tools/dist_train.sh configs/yopo/nocs_yopo_real_camera_r50.py 6 --auto-scale-lr
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
+bash tools/dist_train.sh configs/yopo/nocs_yopo_real_camera_r50.py 4 --auto-scale-lr
 ```
 
 ### NOCS (Swin-L)
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 \
-bash tools/dist_train.sh configs/yopo/nocs_yopo_real_camera_swinl.py 6 --auto-scale-lr
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
+bash tools/dist_train.sh configs/yopo/nocs_yopo_real_camera_swinl.py 4 --auto-scale-lr
 ```
 
 ### HouseCat6D (R50)
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 \
-bash tools/dist_train.sh configs/yopo/housecat6d_yopo_r50.py 6 --auto-scale-lr
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
+bash tools/dist_train.sh configs/yopo/housecat6d_yopo_r50.py 4 --auto-scale-lr
 ```
 
 ### HouseCat6D (Swin-L)
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 \
-bash tools/dist_train.sh configs/yopo/housecat6d_yopo_swinl.py 6 --auto-scale-lr
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
+bash tools/dist_train.sh configs/yopo/housecat6d_yopo_swinl.py 4 --auto-scale-lr
 ```
 
 ## Fine-tuning (NOCS Real)
@@ -157,8 +157,8 @@ The repository includes a real-data fine-tuning setup:
 Example:
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 \
-bash tools/dist_train.sh configs/yopo/nocs_yopo_real_camera_swinl_finetune_real.py 6 --auto-scale-lr \
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
+bash tools/dist_train.sh configs/yopo/nocs_yopo_real_camera_swinl_finetune_real.py 4 --auto-scale-lr \
   --cfg-options load_from=work_dirs/nocs_yopo_real_camera_swinl/epoch_12.pth
 ```
 
