@@ -51,8 +51,10 @@ The target base environment is:
 cd /path/to/YOPO
 
 # 2) install OpenMMLab core deps with openmim
-pip install -U pip setuptools wheel openmim
-mim install "mmcv>=2.0.0rc4,<2.2.0" "mmengine>=0.7.1,<1.0.0"
+apt update -y
+apt-get install libxcb1 ffmpeg libsm6 libxext6 -y
+pip install -U pip setuptools wheel openmim mmengine
+mim install mmcv==2.2.0
 
 # 3) install this repo (setup.py)
 pip install -v -e .
