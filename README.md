@@ -138,12 +138,6 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 \
 bash tools/dist_train.sh configs/yopo/nocs_yopo_real_camera_swinl.py 4 --auto-scale-lr
 ```
 
-### HouseCat6D (R50)
-```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 \
-bash tools/dist_train.sh configs/yopo/housecat6d_yopo_r50.py 4 --auto-scale-lr
-```
-
 ### HouseCat6D (Swin-L)
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 \
