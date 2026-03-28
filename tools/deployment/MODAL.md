@@ -21,6 +21,12 @@ pip install modal
 modal setup
 ```
 
+If you want local rendering from the JSON response, also install:
+
+```bash
+pip install numpy opencv-python
+```
+
 Optional environment variables:
 
 ```bash
@@ -65,8 +71,16 @@ After `modal serve` or `modal deploy`, you can send a request with:
 python tools/deployment/modal_client.py \
   https://<your-endpoint>.modal.run \
   path/to/image.png \
-  --fx 577.5 --fy 577.5 --cx 319.5 --cy 239.5
+  --fx 577.5 --fy 577.5 --cx 319.5 --cy 239.5 \
+  --json-out result.json \
+  --render-out result.png
 ```
+
+The lightweight client renders with only `opencv-python` and `numpy`. It draws:
+
+- 2D bounding boxes and class labels
+- Pose axes
+- Size-based 3D cuboids
 
 ## HTTP request format
 
