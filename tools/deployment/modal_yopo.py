@@ -135,7 +135,7 @@ def _normalize_intrinsic(value: Any) -> Any:
     env={"YOPO_MODEL_KEY": MODEL_KEY},
     gpu="A10G",
     volumes={str(MODEL_ROOT): MODEL_VOLUME},
-    scaledown_window=300,
+    scaledown_window=900,
 )
 class YOPOPoseService:
 
